@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+  {{ content }}
+
+
+  {% if site.paginate %}
+    {% assign posts = paginator.posts %}
+  {% else %}
+    {% assign posts = site.posts %}
+  {% endif %}
+
+  <hr>
+  <br>
+
+  <h2>Academic projects</h2>
+  <ul class="post-list">
+  <li>
+    <span>Soft Discretization in Self-Supervised Learning</span>
+    <br>
+    <span><em>In submission</em></span>
+  </li>
+  <li>
+    <span>Emergent structure in Representation Learning - Application & generalization</span>
+    <br>
+    <span>Pre-print | <a href="assets/Predoc3.pdf">Paper</a> | <a href="assets/Predoc3_slides.pdf">Slides</a></span>
+  </li>
+  <li>
+    <span>Integrating Categorical Semantics into Unsupervised Domain Translation</span>
+    <br>
+    <span>ICLR 2021 | <a href="https://openreview.net/pdf?id=IMPA6MndSXU">Paper</a> | <a href="https://github.com/lavoiems/Cats-UDT">Code</a></span>
+  </li>
+  <li>
+    <span>Representation learning in Unsupervised Domain Translation</span>
+    <br>
+    <span>Master Thesis | <a href="https://papyrus.bib.umontreal.ca/xmlui/bitstream/handle/1866/24324/Lavoie_Marchildon_Samuel_2020_Memoire.pdf">Paper</a></span>
+  </li>
+  <li>
+    <span>Learning deep representation by mutual information estimation and maximization</span>
+    <br>
+    <span>ICLR 2019 | <a href="https://openreview.net/pdf?id=Bklr3j0cKX">Paper</a> | <a href="">Code</a></span>
+  </li>
+  </ul>
+</div>
+

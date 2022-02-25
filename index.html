@@ -1,0 +1,49 @@
+---
+#
+# By default, content added below the "---" mark will appear in the home page
+# between the top bar and the list of recent posts.
+# To change the home page layout, edit the _layouts/home.html file.
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+#
+layout: home
+---
+
+<style>
+/* Create two unequal columns that floats next to each other */
+.column {
+  box-sizing: border-box;
+  float: left;
+  padding: 10px;
+}
+
+.left {
+  width: 40%;
+}
+
+.right {
+  width: 60%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+
+<div class="row">
+  <div class="column left">
+    <img src="assets/profile.png" alt="Profile picture" style="width:100%">
+  </div>
+  <div class="column right">
+    <p>Welcome to my website! I am a PhD candidate at the Université de Montréal and Mila. My research focuses primarily on the problem of representation and,
+    more precisely, on how to learn a structured and simple representation of natural data.
+    I am also interested in downstream applications of structured representation and identifying such structures.
+    <p>You are welcome to can contact me via my email.</p>
+
+    <span>Email: <a href=mailto:samuel.lavoie.m@gmail.com>samuel.lavoie.m@gmail.com</a></span>
+
+    </p>
+  </div>
+</div>
